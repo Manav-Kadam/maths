@@ -1,0 +1,222 @@
+*{
+    border: 0;
+    padding: 0;
+    background-color: rgb(161, 208, 223);
+    margin: none;
+}
+.head{
+    color: black;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 8rem;
+}
+#container{
+    position: relative;
+    width: 40%;
+    height: 30rem;
+    background-color: #055052;
+    left: 30%;
+    border-radius: 1rem;
+}
+#correct{
+    position: absolute;
+    left: 260px;
+    background-color: #42e252;
+    color: white;
+    border-radius: 4px;
+    display: none;
+}
+
+#wrong{
+    position: absolute;
+    left: 250px;
+    background-color: #de401a;
+    color: white;
+    border-radius: 4px;
+    display: none;
+}
+#score{
+    position: absolute;
+    width: 14%;
+    height: 6%;
+    background-color: #f3f2c9;
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+    border-radius: 3px;
+    top: 1rem;
+    left: 80%;
+}
+#question{
+    position: absolute;
+    width: 90%;
+    height: 40%;
+    background-color: #53b8bb;
+    border-radius: 6px;
+    top: 3.5rem;
+    left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#instruction{
+    position: absolute;
+    width: 85%;
+    height: 6%;
+    font-size: larger;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: lightgreen;
+    top: 53%;
+    left: 7.5%;
+    border-radius: 5px;
+}
+#startreset{
+    width: 15%;
+    height: 7%;
+    position: absolute;
+    background-color: #f3f2c9;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    top: 90%;
+    left: 42.5%;
+    cursor: pointer;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+#timeremaining{
+    width: 29%;
+    height: 7%;
+    position: absolute;
+    background-color: yellowgreen;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    top: 90%;
+    right: 3%;
+    display: none;
+}
+.box{
+    position: absolute;
+   width: 7rem;
+   height: 7rem;
+   background-color: lightgrey; 
+   top: 62%;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 3rem;
+}
+#box1{
+left: 10%;
+}
+#box2{
+left: 30%;
+}
+#box3{
+left: 50%;
+}
+#box4{
+left: 70%;
+}
+#gameOver{
+    width: 80%;
+    height: 50%;
+    background: linear-gradient(#F3CA6B, #F3706C);
+    background: -webkit-linear-gradient(#F3CA6B, #F3706C);
+    background: -o-linear-gradient(#F3CA6B, #F3706C);
+    background: -moz-linear-gradient(#F3CA6B, #F3706C);
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    top: 25%;
+    left: 10%;
+    display: none;
+}
+     #startreset:hover{
+       background-color: #9C89F6;
+       color: white;
+        box-shadow: 0px 4px #6b54d3;
+      -moz-box-shadow: 0px 4px #6b54d3;
+       -webkit-box-shadow: 0px 4px #6b54d3;
+    }
+    
+    .box:active, #startreset:active{
+        background-color: #9C89F6;
+        color: white;
+        box-shadow: 0px 0px #6b54d3; 
+        -moz-box-shadow: 0px 0px #6b54d3; 
+        -webkit-box-shadow: 0px 0px #6b54d3;
+    }
+    @media ( max-width:1090px){
+    .head{
+       font-size: 2rem;
+       margin-top: 4rem;
+    }
+    #container{
+        width: 80%;
+       left: 10%;}
+       #correct, #wrong{
+           left: 30%;
+           width: 25%;
+           height: 5%;
+           top:1rem;
+           text-align: center;
+           padding-top: 0.4rem;
+       }
+       #score{
+           left: 70%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           padding: 0;
+           width: 25%;
+       }
+       .box{
+           width: 20%;
+           height: 12%;
+       }
+       #box1{
+           left: 7%;
+       }
+       #box2{
+           left: 29%;
+       }
+       #box3{
+           left: 51%;
+       }
+       #box4{
+           left: 73%;
+       }
+       #startreset{
+           top: 79%;
+           width: 30%;
+           left: 35%;
+       }
+       #timeremaining{
+           width: 70%;
+           height: 6%;
+           left: 15%;
+       }
+       #gameOver{
+           text-align: center;
+       }
+    }
